@@ -36,3 +36,6 @@ String.class_eval do
   end
 
 end
+
+# Time formatters
+Time::DATE_FORMATS[:detailed] = '%Y-%m-%d %H:%M'

@@ -48,4 +48,9 @@ class RubyExtensionsTest < Test::Unit::TestCase
     assert_equal 'C:\Temp\ęóąśłżźćń.txt'.sanitize_as_filename, 'eoaslzzcn.txt'
   end
 
+  def test_time_formatters
+    time = Time.now
+    assert_equal time.strftime('%Y-%m-%d %H:%M'), time.to_s(:detailed)
+  end
+
 end
