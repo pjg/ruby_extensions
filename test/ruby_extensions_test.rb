@@ -1,13 +1,7 @@
 require 'test/unit'
 require File.dirname(__FILE__) + '/test_helper'
 
-class RubyExtensionsTest < Test::Unit::TestCase
-
-  def test_object_extensions
-    assert ''.respond_to?(:try)
-    assert_nil ''.try(:non_existing_method)
-    assert_equal 'a '.try(:strip), 'a'
-  end
+class RubyExtensionsTest < ActiveSupport::TestCase
 
   def test_array_extensions
     assert [].respond_to?(:arithmetic_mean)

@@ -1,12 +1,5 @@
 require 'unidecode'
 
-# Object extensions
-Object.class_eval do
-  def try(meth, *args, &block)
-    __send__(meth, *args, &block) if respond_to? meth
-  end
-end
-
 # Array extensions
 Array.class_eval do
   def arithmetic_mean
