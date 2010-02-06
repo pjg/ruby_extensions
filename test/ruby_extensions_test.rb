@@ -45,6 +45,7 @@ class RubyExtensionsTest < ActiveSupport::TestCase
   def test_time_formatters
     time = Time.now
     assert_equal time.strftime('%Y-%m-%d %H:%M'), time.to_s(:detailed)
+    assert_equal time.strftime('%Y-%m-%d'), time.to_s(:brief)
   end
 
 end

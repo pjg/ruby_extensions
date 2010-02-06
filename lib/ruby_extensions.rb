@@ -32,3 +32,4 @@ end
 
 # Time formatters
 Time::DATE_FORMATS[:detailed] = '%Y-%m-%d %H:%M'
+Time::DATE_FORMATS[:brief] = '%Y-%m-%d'
