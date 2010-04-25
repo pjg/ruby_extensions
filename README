@@ -8,7 +8,7 @@ Installation
 ============
 
 git submodule add git://github.com/pjg/ruby_extensions.git vendor/plugins/ruby_extensions
-git commit -m "Added ruby_extensions plugin as a submodule."
+git commit -m "Add ruby_extensions plugin as a submodule"
 
 
 Examples
