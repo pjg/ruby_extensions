@@ -1,4 +1,4 @@
-require 'unidecode'
+require 'unidecoder'
 
 # Array extensions
 Array.class_eval do
@@ -24,7 +24,7 @@ String.class_eval do
   end
 
   def transliterate
-    # Unidecode gem is missing some hyphen transliterations
+    # Unidecoder gem is missing some hyphen transliterations
     self.gsub(/[-‐‒–—―⁃−­]/, '-').to_ascii
   end
 
